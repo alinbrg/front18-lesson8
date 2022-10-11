@@ -1,0 +1,108 @@
+/* reset styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+}
+
+/* global */
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+}
+.d-flex {
+	display: flex;
+}
+.bg-darkblue {
+	background-color: darkblue;
+}
+
+/* custom */
+header {
+	background-color: darkblue;
+}
+
+header img {
+	width: 200px;
+}
+header a {
+	color: white;
+	font-size: 30px;
+}
+/* header ul {
+	display: flex;
+} */
+.header-box {
+	/* display: flex; */
+	justify-content: space-between;
+	align-items: center;
+}
+header li {
+	margin: 0 20px;
+}
+.box {
+	width: 300px;
+	height: 300px;
+	font-size: 30px;
+	color: white;
+	background-color: darkblue;
+	border: 5px solid red;
+	text-align: center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.parent {
+	background-color: purple;
+	height: 100vh;
+	/* display: flex; */
+	/* flex-direction: column; */
+	flex-wrap: wrap;
+	/* ჰორიზონტალური */
+	justify-content: center;
+	/* ვერტიკალურად */
+	align-items: center;
+	/* align-content: space-between; */
+}
+.img-flex {
+	background-color: cadetblue;
+	padding: 50px 0;
+	/* display: flex; */
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	justify-content: space-between;
+}
+.img-flex img {
+	max-width: 800px;
+	width: 100%;
+}
+.img-flex p {
+	max-width: 300px;
+}
+
+.box-3 {
+	order: 5;
+	flex-grow: 2;
+}
+.box-1 {
+	order: 3;
+	flex-grow: 3;
+}
+.box-2 {
+	order: 4;
+}
+.box-4 {
+	order: 1;
+}
+.box-5 {
+	order: 2;
+}
